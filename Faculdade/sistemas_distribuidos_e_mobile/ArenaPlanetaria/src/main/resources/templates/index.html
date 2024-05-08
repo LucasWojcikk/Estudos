@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneio do Poder</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Lista das Arenas Planetarias!</h1>
+
+    <h3>Arenas:</h3>
+
+    <tr th:each="arena: ${arenas}">
+		
+        <span th:text="${arena.nomeArena}"></span>
+        <span th:text="${arena.nomePlaneta}"></span>
+        <span th:text="${arena.ultimoCampeao}"></span>
+        <p></p>
+
+    </tr>
+
+
+</body>
+
+</html>

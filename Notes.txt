@@ -1,0 +1,9 @@
+# Anotações sobre o repositório
+
+	Arquivo gitignore gerado pelo site:
+		https://www.toptal.com/developers/gitignore
+		
+		Lista de IDE no gitignore:
+			PyCharm, Eclipse, Intellij, VisualStudio, VisualStudioCode
+		Lista de linguagens no gitignore:	
+			CSharp, Java, Python, Gradle

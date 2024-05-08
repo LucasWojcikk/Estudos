@@ -1,0 +1,10 @@
+# BudgetSystem
+
+	Budget system developed in C# for study purposes.
+
+	Packages: FontAwesome.Sharp(6.3.0)
+		
+
+	Colors:
+		Primaria: 33; 34; 44 - 33, 34, 44
+		Secundaria: 46; 47; 56 - 46, 47, 56

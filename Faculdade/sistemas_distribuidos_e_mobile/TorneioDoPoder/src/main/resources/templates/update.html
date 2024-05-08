@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneio do Poder</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Atualizar dados do Lutador!!!</h1>
+
+    <form action="#"
+        method="post"
+        th:action="@{/atualizar/{id}(id=${lutador.id})}"
+        th:object="${lutador}">
+
+        <input 
+            placeholder= "Nome do lutador"
+            id="nome"
+            th:field = "*{nome}"
+            />
+
+        <input 
+            placeholder= "Ki do lutador"
+            id="ki"
+            type="number"
+            th:field = "*{ki}"
+            />
+
+        <input 
+            placeholder= "Peso do lutador"
+            id="peso"
+            th:field = "*{peso}"
+            />
+
+        <br>
+        <br>
+
+        <input type="submit" value="Salvar"/>
+		<input type="hidden" name='_method' value="PUT"/>
+    </form>
+	
+    <br>
+	
+    <form action="#"
+	    method="post"
+	    th:action="@{/remover/{id}(id=${lutador.id})}"
+	    th:object="${lutador}">
+	    <input type="submit" value="Deletar"/>
+	    <input type="hidden" name='_method' value="DELETE"/>
+    </form>
+
+</body>
+
+</html>
