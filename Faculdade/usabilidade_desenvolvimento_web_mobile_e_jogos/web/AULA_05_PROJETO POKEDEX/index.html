@@ -1,29 +1,72 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokedex do luquinhas</title>
-    <link rel="icon" href="icons/psyduck.ico" type="image/x-icon">
-    <script src="js/scripts.js"></script>
+    <head>
+        <title>Pokedex</title>
+        <script src="js/scripts.js"></script>
 
-    <link rel="stylesheet" href="css/style.css">
+        <style>
+
+            h1{
+                color: blue;
+                font-size: larger; 
+            }
+
+            .header{
+                color: black;
+                font-size: larger; 
+            }
+
+            .footer{
+                color: azure;
+                font-size: larger; 
+            }
+
+            .agua{
+                color: azure;
+                font-size: larger; 
+            }
+
+            .fogo{
+                color: orange;
+                font-size: larger; 
+            }
+
+            .grama{
+                color: greenyellow;
+                font-size: larger; 
+            }
+
+            .terra{
+                color: burlywood;
+                font-size: larger; 
+            }
+
+            .card{
+                border-color: grey;
+                border-width: 1px;
+                border-style: solid;
+                width: 30%;
+            }
+
+            #conteudo-pokemon{
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+
+        </style>
     
-</head>
+    </head>
 
-<body onload="carregarPokemons()">
+    <body onload="carregarPokemons()">
 
-    <h1 class="header">Lista de Pokemons</h1>
+        <h1 class="header">Lista de Pokemons</h1>
 
-    <!-- <div id="conteudo-pokemon"></div> -->
-    <div id = "div-fogo"></div>
-    <div id="div-terra"></div>
-    <div id="div-agua"></div>
-    <div id="div-grama"></div>
+        <div id="conteudo-pokemon"></div>
 
-    <h1 class="footer">Final da Lista</h1>
-    
-</body>
+        <h1 class="footer">Final da Lista</h1>
+
+    </body>
 
 </html>
