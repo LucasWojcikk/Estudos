@@ -1,0 +1,79 @@
+Gestão e Qualidade de Software
+Lucas Filipak TI
+Analista de sistemas 
+
+PHP 
+MySQL
+
+Mostra de projetos
+
+PHP inicial - revisão de lógica
+CRUD - banco de dados
+Login com sessão, criptografia (MD5) e com nível de acesso
+Inserção de imagem (pesquisa)
+Arquivo txt
+
+PHP - "Tranquila" pois não precisa de compilador
+Backend - Zero layout (HTML e CSS)
+TUUUUDO roda no servidor
+
+Linguagem Fracamente TIPADA
+Permite que você NÃO declare a variável
+
+Variáveis
+Toda variável em PHP começa com $
+Sensitive Case $CA <> $Ca <> $ca <> $cA
+$nome
+$idade
+$sexo
+
+$_MAIUSCULO
+
+$_GET
+$_POST
+$_COOKIES
+$_FILE
+
+não pode iniciar com números
+não pode espaço $nome_pai (constant)
+não pode caracter especial
+
+! negação
+@ oculta o erro da linha
+* multiplica
+$ simbolo da variável
+# comentário de linha
+% resto
+& e and
+| ou or
+/ divisão
+. concatenação
+
+O PHP quase sempre estará no meio do HTML e para isso usamos os delimitadores
+
+<?php
+
+
+?>
+
+echo é o comando de impressão
+
+IDE (VSCode)
+XAMPP 
+
+X sistema operacional 
+A apache (servidor WEB)
+M myqsl (SGBD)
+P php
+
+htdocs é a pasta de arquivos do servidor web
+
+todo final de instrução é utilizado o ;
+NÃO pode ter abertura e fechamento de {
+
+= atribuição (recebe)
+== comparação de conteúdo (somente dentro de uma condição, que pode ser uma condicional ou um laço)
+=== idêntico (conteúdo e tipo)
+
+<> diferente
+!= não igual
