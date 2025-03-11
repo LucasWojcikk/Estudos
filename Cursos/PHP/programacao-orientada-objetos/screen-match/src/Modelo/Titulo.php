@@ -13,6 +13,7 @@ abstract class Titulo implements Avaliavel{
     ){
     }
 
+    abstract public function duracaoEmMinutos(): int;
     
 }
 
