@@ -120,16 +120,16 @@ void ListarContas()
     }
     foreach (ContaCorrente item in _listaDeContas)
     {
-        Console.WriteLine("===  Dados da Conta  ===");
-        Console.WriteLine("Número da Conta : " + item.Conta);
-        Console.WriteLine("Saldo da Conta : " + item.Saldo);
-        Console.WriteLine("Titular da Conta: " + item.Titular.Nome);
-        Console.WriteLine("CPF do Titular  : " + item.Titular.Cpf);
-        Console.WriteLine("Profissão do Titular: " + item.Titular.Profissao);
+        //Console.WriteLine("===  Dados da Conta  ===");
+        //Console.WriteLine("Número da Conta : " + item.Conta);
+        //Console.WriteLine("Saldo da Conta : " + item.Saldo);
+        //Console.WriteLine("Titular da Conta: " + item.Titular.Nome);
+        //Console.WriteLine("CPF do Titular  : " + item.Titular.Cpf);
+        //Console.WriteLine("Profissão do Titular: " + item.Titular.Profissao);
+        Console.WriteLine(item.ToString());
         Console.WriteLine(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
         Console.ReadKey();
     }
-
 }
 
 void RemoverContas()
@@ -204,28 +204,36 @@ void PesquisarContas()
 
 ContaCorrente ConsultaPorNumeroConta(string? numeroConta)
 {
-    ContaCorrente conta = null;
-    for (int i = 0; i < _listaDeContas.Count; i++)
-    {
-        if (_listaDeContas[i].Conta.Equals(numeroConta))
-        {
-            conta = _listaDeContas[i];
-        }
-    }
-    return conta;
+    //// Metodo usando for, iterando sobre toda a lista
+    //ContaCorrente conta = null;
+    //for (int i = 0; i < _listaDeContas.Count; i++)
+    //{
+    //    if (_listaDeContas[i].Conta.Equals(numeroConta))
+    //    {
+    //        conta = _listaDeContas[i];
+    //    }
+    //}
+    //return conta;
+
+    // metodo usando o WHERE com expressão lambda (LINQ)
+    return _listaDeContas.Where(conta => conta.Conta == numeroConta).FirstOrDefault();
 }
 
 ContaCorrente ConsultaPorCPFTitular(string? cpf)
 {
-    ContaCorrente conta = null;
-    for (int i = 0; i < _listaDeContas.Count; i++)
-    {
-        if (_listaDeContas[i].Titular.Cpf.Equals(cpf))
-        {
-            conta = _listaDeContas[i];
-        }
-    }
-    return conta;
+    //// Metodo usando for, iterando sobre toda a lista
+    //ContaCorrente conta = null;
+    //for (int i = 0; i < _listaDeContas.Count; i++)
+    //{
+    //    if (_listaDeContas[i].Titular.Cpf.Equals(cpf))
+    //    {
+    //        conta = _listaDeContas[i];
+    //    }
+    //}
+    //return conta;
+
+    // metodo usando o WHERE com expressão lambda (LINQ)
+    return _listaDeContas.Where(conta=>conta.Titular.Cpf==cpf).FirstOrDefault();
 }
 
 AtendimentoCliente();
