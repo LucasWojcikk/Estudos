@@ -9,7 +9,7 @@ try
 
     var listaArtistas = artistaDAL.Listar();
 
-    foreach ( var artista in listaArtistas)
+    foreach (var artista in listaArtistas)
     {
         Console.WriteLine(artista);
     }
@@ -67,7 +67,7 @@ void ExibirOpcoesDoMenu()
         Menu menuASerExibido = opcoes[opcaoEscolhidaNumerica];
         menuASerExibido.Executar(artistasRegistrados);
         if (opcaoEscolhidaNumerica > 0) ExibirOpcoesDoMenu();
-    } 
+    }
     else
     {
         Console.WriteLine("Opção inválida");
