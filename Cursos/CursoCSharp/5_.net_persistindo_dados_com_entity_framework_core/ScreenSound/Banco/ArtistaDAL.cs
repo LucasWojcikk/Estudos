@@ -42,5 +42,11 @@ namespace ScreenSound.Banco
             context.SaveChanges();
         }
 
+        public Artista RecuperarPeloNome(string nomeArtista) 
+        {
+
+            Artista artista = context.Artistas.Where(a => a.Nome == nomeArtista).FirstOrDefault();
+            return artista;
+        }
     }
 }
