@@ -21,4 +21,6 @@ public class ScreenSoundContext: DbContext
             .UseSqlServer(connectionString)
             .UseLazyLoadingProxies();
     }
+
+    
 }

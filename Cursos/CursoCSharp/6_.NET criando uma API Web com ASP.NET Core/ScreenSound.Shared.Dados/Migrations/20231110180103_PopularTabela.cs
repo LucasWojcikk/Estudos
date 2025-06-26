@@ -28,7 +28,7 @@ namespace ScreenSound.Migrations
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.Sql("DELETE FROM Artistas;");
+            migrationBuilder.Sql("DELETE FROM Artistas");
         }
     }
 }
